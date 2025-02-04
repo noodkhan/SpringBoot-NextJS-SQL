@@ -1,3 +1,104 @@
+
+  <h1>Room Reservation System <img src="https://img.shields.io/badge/Room%20Reservation%20System-blue" alt="Room Reservation Badge"></h1>
+
+  <div class="section">
+    <h2>Overview <img src="https://img.shields.io/badge/Overview-Introduction-green" alt="Overview Sticker"></h2>
+    <p>This system automates the process of managing room reservations for a hotel or any accommodation. Users can view available rooms, check in/out, and book rooms, while administrators can manage room details, bookings, and user information.</p>
+  </div>
+
+  <div class="section">
+    <h2>Features <img src="https://img.shields.io/badge/Features-Room%20Management-green" alt="Features Sticker"></h2>
+    <ul>
+      <li>Room Availability Check: Users can view available rooms in real-time.</li>
+      <li>Booking Management: Allows users to reserve rooms and view booking details.</li>
+      <li>Admin Panel: Admins can manage rooms, check bookings, and update statuses.</li>
+      <li>User Management: Users can create an account, manage reservations, and view booking history.</li>
+      <li>Responsive UI: Works seamlessly across different devices.</li>
+    </ul>
+  </div>
+
+  <div class="section">
+    <h2>Requirements <img src="https://img.shields.io/badge/Requirements-Java%20Spring%2C%20Next.js%2C%20MySQL-yellow" alt="Requirements Sticker"></h2>
+    <p>Before running the system, ensure you have the following:</p>
+    <ul>
+      <li><strong>Java Spring</strong>: For backend API development.</li>
+      <li><strong>Next.js</strong>: For creating the frontend.</li>
+      <li><strong>MySQL</strong>: For storing user data, room availability, and bookings.</li>
+      <li><strong>Node.js</strong>: Required to run the Next.js application.</li>
+    </ul>
+  </div>
+
+  <div class="section">
+    <h2>Setup Instructions <img src="https://img.shields.io/badge/Setup-Easy%20Installation-orange" alt="Setup Sticker"></h2>
+    <h3>1. Set up the Backend (Java Spring)</h3>
+    <ol>
+      <li>Install Spring Boot with dependencies like Spring Web, Spring Data JPA, and MySQL Driver.</li>
+      <li>Create models for <strong>Room</strong>, <strong>Booking</strong>, and <strong>User</strong>.</li>
+      <li>Set up JPA repositories for interacting with MySQL.</li>
+      <li>Create services to manage bookings, room availability, and user authentication.</li>
+      <li>Create REST controllers to expose endpoints for the frontend.</li>
+    </ol>
+
+    <h3>2. Set up the Frontend (Next.js)</h3>
+    <ol>
+      <li>Initialize a Next.js project.</li>
+      <li>Create pages for user registration, room booking, and admin management.</li>
+      <li>Integrate API calls with the backend using Axios or fetch.</li>
+      <li>Implement user authentication using JWT tokens.</li>
+    </ol>
+
+    <h3>3. Set up MySQL</h3>
+    <ol>
+      <li>Create a MySQL database to store tables for <strong>users</strong>, <strong>rooms</strong>, and <strong>bookings</strong>.</li>
+      <li>Ensure proper relationships between the tables for efficient data handling.</li>
+    </ol>
+  </div>
+
+  <div class="section">
+    <h2>Usage Instructions <img src="https://img.shields.io/badge/Usage-Simple%20Command-purple" alt="Usage Sticker"></h2>
+    <p>Once everything is set up, follow these steps to run the system:</p>
+    <ul>
+      <li><strong>Start Backend</strong>: Run the Spring Boot application using the command <code>mvn spring-boot:run</code>.</li>
+      <li><strong>Start Frontend</strong>: Run the Next.js application using <code>npm run dev</code>.</li>
+    </ul>
+  </div>
+
+  <div class="section">
+    <h2>Customization Options <img src="https://img.shields.io/badge/Customization-Custom%20Themes-red" alt="Customization Sticker"></h2>
+    <ul>
+      <li><strong>Room Categories</strong>: Customize room categories (e.g., single, double, suite).</li>
+      <li><strong>Booking Duration</strong>: Allow users to select specific check-in and check-out dates.</li>
+      <li><strong>Payment Integration</strong>: Integrate with a payment gateway for booking payments.</li>
+    </ul>
+  </div>
+
+  <div class="section">
+    <h2>Troubleshooting <img src="https://img.shields.io/badge/Troubleshooting-FAQ-purple" alt="Troubleshooting Sticker"></h2>
+    <ul>
+      <li><strong>Database Connection</strong>: Verify MySQL is running and check connection details in <code>application.properties</code>.</li>
+      <li><strong>API Issues</strong>: Ensure that the Spring Boot application is running and API routes are correctly configured.</li>
+      <li><strong>Frontend Build Issues</strong>: Ensure Next.js is properly set up with React components and API routes.</li>
+    </ul>
+  </div>
+
+  <div class="section">
+    <h2>Contributing <img src="https://img.shields.io/badge/Contributing-Open%20to%20PRs-yellow" alt="Contributing Sticker"></h2>
+    <p>We welcome contributions! Feel free to fork the repository, make changes, and submit a pull request for enhancements or bug fixes.</p>
+  </div>
+
+  <div class="section">
+    <h2>License <img src="https://img.shields.io/badge/License-MIT%20License-lightgrey" alt="License Sticker"></h2>
+    <p>This project is licensed under the <strong>MIT License</strong>. You can freely use, modify, and distribute the code, as long as the license is included.</p>
+  </div>
+
+  <div class="section">
+    <h2>Acknowledgments <img src="https://img.shields.io/badge/Acknowledgments-Thanks%20Unsplash-orange" alt="Acknowledgments Sticker"></h2>
+    <ul>
+      <li><strong>Unsplash</strong>: For providing high-quality, free-to-use images for the website.</li>
+      <li><strong>Spring Boot</strong>: For being a powerful framework to build the backend.</li>
+      <li><strong>Next.js</strong>: For being a fast and efficient framework for the frontend.</li>
+    </ul>
+  </div>
 <h2>Features</h2>
 <ul>
     <li>User authentication and role-based access</li>
