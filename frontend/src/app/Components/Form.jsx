@@ -41,6 +41,51 @@ function Form() {
     }
   };
 
+  // Handle form submission
+  const handleSubmitPUT = async (e) => {
+    e.preventDefault();
+    try {
+      const response = await axios.put(
+        "http://localhost:8080/api/1",
+        formData,
+        {
+          headers: {
+            "Content-Type": "application/json",
+          },
+        }
+      );
+      console.log("Success:", response.data);
+      alert("User added successfully!");
+    } catch (error) {
+      console.error("Error:", error);
+      alert("Error submitting form.");
+    }
+  };
+
+
+  // Handle form submission
+  const handleSubmitPATCH = async (e) => {
+    e.preventDefault();
+    try {
+      const response = await axios.patch(
+        "http://localhost:8080/api/1",
+        formData,
+        {
+          headers: {
+            "Content-Type": "application/json",
+          },
+        }
+      );
+      console.log("Success:", response.data);
+      alert("User added successfully!");
+    } catch (error) {
+      console.error("Error:", error);
+      alert("Error submitting form.");
+    }
+  };
+
+
+
   const handleChange = (e) => {
     setFormData({
       ...formData,
@@ -56,6 +101,7 @@ function Form() {
           onSubmit={handleSubmit}
           style={{ display: "flex", flexDirection: "column", gap: "10px" }}
         >
+
           <input
             type="text"
             name="name"
@@ -119,7 +165,13 @@ function Form() {
             onChange={handleChange}
             required
           />
-          <button type="submit">Submit</button>
+
+
+          <button type="submit">GET</button>
+          <button type="submit">POST</button>
+          <button type="submit">PUT</button>
+          <button type="submit">PATCH</button>
+          <button type="submit">DELETE</button>
         </form>
       </div>
     </div>
